@@ -15,6 +15,7 @@
 		0E88549C2059298B00919BAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E88549B2059298B00919BAE /* main.m */; };
 		0E8854A62059298B00919BAE /* MyPersonalLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8854A52059298B00919BAE /* MyPersonalLibraryTests.m */; };
 		0E8854B12059298B00919BAE /* MyPersonalLibraryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8854B02059298B00919BAE /* MyPersonalLibraryUITests.m */; };
+		0E8854CB20592F0900919BAE /* HWConfigurationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8854CA20592F0900919BAE /* HWConfigurationHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		0E8854AC2059298B00919BAE /* MyPersonalLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPersonalLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8854B02059298B00919BAE /* MyPersonalLibraryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPersonalLibraryUITests.m; sourceTree = "<group>"; };
 		0E8854B22059298B00919BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E8854C520592AAF00919BAE /* HWConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWConstants.h; sourceTree = "<group>"; };
+		0E8854C920592F0900919BAE /* HWConfigurationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWConfigurationHelper.h; sourceTree = "<group>"; };
+		0E8854CA20592F0900919BAE /* HWConfigurationHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWConfigurationHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,13 @@
 		0E88548B2059298B00919BAE /* MyPersonalLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				0E8854C020592A3300919BAE /* Categories */,
+				0E8854C220592A3300919BAE /* CrashHandler */,
+				0E8854BF20592A3200919BAE /* Definitions */,
+				0E8854BE20592A3200919BAE /* Externals */,
+				0E8854C420592A3300919BAE /* Helpers */,
+				0E8854C320592A3300919BAE /* Images */,
+				0E8854C120592A3300919BAE /* VC */,
 				0E88548C2059298B00919BAE /* AppDelegate.h */,
 				0E88548D2059298B00919BAE /* AppDelegate.m */,
 				0E88548F2059298B00919BAE /* ViewController.h */,
@@ -130,6 +141,58 @@
 				0E8854B22059298B00919BAE /* Info.plist */,
 			);
 			path = MyPersonalLibraryUITests;
+			sourceTree = "<group>";
+		};
+		0E8854BE20592A3200919BAE /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		0E8854BF20592A3200919BAE /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				0E8854C520592AAF00919BAE /* HWConstants.h */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
+		0E8854C020592A3300919BAE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		0E8854C120592A3300919BAE /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		0E8854C220592A3300919BAE /* CrashHandler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CrashHandler;
+			sourceTree = "<group>";
+		};
+		0E8854C320592A3300919BAE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0E8854C420592A3300919BAE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0E8854C920592F0900919BAE /* HWConfigurationHelper.h */,
+				0E8854CA20592F0900919BAE /* HWConfigurationHelper.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E8854912059298B00919BAE /* ViewController.m in Sources */,
+				0E8854CB20592F0900919BAE /* HWConfigurationHelper.m in Sources */,
 				0E88549C2059298B00919BAE /* main.m in Sources */,
 				0E88548E2059298B00919BAE /* AppDelegate.m in Sources */,
 			);
